@@ -13,10 +13,8 @@ USER devusr
 RUN mkdir /home/devusr/.ssh \
     && mkdir /home/devusr/work
 
-WORKDIR /home/devusr/work
+COPY ./git_clone.sh /home/devusr/work
 
-COPY ./git_clone.sh .
+COPY ./entrypoint.sh /home/devusr/work
 
-COPY ./entrypoint.sh .
-
-ENTRYPOINT [ "./entrypoint.sh" ]
+ENTRYPOINT [ "/home/devusr/work/entrypoint.sh" ]
