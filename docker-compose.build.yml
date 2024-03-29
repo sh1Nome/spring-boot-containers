@@ -1,0 +1,14 @@
+version: "3.9"
+services:
+  build:
+    build:
+      context: ./
+      target: build
+    volumes:
+      - "./libs:/home/workuser/work/build"
+    container_name: buildc
+  db:
+    build:
+      context: ./
+      target: db
+    container_name: dbc

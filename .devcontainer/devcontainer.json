@@ -1,8 +1,8 @@
 {
     "name": "SpringBoot App Dev Templete",
-    "dockerComposeFile": "../docker-compose.yml",
+    "dockerComposeFile": "../docker-compose.dev.yml",
     "service": "dev",
-    "workspaceFolder": "/home/devusr/work",
+    "workspaceFolder": "/home/workuser/work",
     "customizations": {
         "vscode": {
             "settings": {
