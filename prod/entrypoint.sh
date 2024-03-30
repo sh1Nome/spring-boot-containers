@@ -1,5 +1,7 @@
 #!/bin/bash
 
+cd /opt/app
+
 function start() {
     # MySQLの起動確認
     while true
@@ -12,8 +14,8 @@ function start() {
     done
 
     # SpringBootアプリケーションの起動
-    JAR_NAME=`ls /opt/app | grep jar`
-    java -jar /opt/app/${JAR_NAME}
+    JAR_NAME=`ls | grep jar`
+    java -jar ./${JAR_NAME}
 }
 
 function shutdown() {

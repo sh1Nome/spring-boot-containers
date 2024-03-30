@@ -21,6 +21,4 @@ RUN mkdir /opt/app \
     && chown workuser:workuser /opt/app
 USER workuser
 WORKDIR /opt/app
-COPY ./prod/entrypoint.sh .
-COPY ./libs/ .
 ENTRYPOINT [ "./entrypoint.sh" ]
