@@ -3,6 +3,7 @@
     "dockerComposeFile": "../docker-compose.dev.yml",
     "service": "dev",
     "workspaceFolder": "/home/workuser/work",
+    "shutdownAction": "none",
     "customizations": {
         "vscode": {
             "settings": {
