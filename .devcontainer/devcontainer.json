@@ -13,7 +13,8 @@
                 "java.jdt.ls.java.home": "/opt/java/openjdk",
                 "emmet.variables": {
                     "lang": "ja"
-                }
+                },
+                "redhat.telemetry.enabled": false
             },
             "extensions": [
                 "MS-CEINTL.vscode-language-pack-ja",
