@@ -16,3 +16,12 @@ docker compose up -d --build db adminer
 ```
 docker compose down --rmi local -v
 ```
+
+# MySQLデータの永続化
+`data`ディレクトリ内にコンテナで立てたMySQLのデータが入る。<br>
+
+### データの初期化方法
+`data`ディレクトリ内の`.gitignore`以外を削除
+
+### データのバックアップ方法
+`data`ディレクトリを任意の場所にコピペ
