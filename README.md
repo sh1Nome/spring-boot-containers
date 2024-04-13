@@ -12,4 +12,4 @@ SpringBootアプリケーションに関するコンテナ
 
 ### v3.0.0
 開発環境をローカルに作った想定。<br>
-MySQLとAdminerしか起動しない。もはや`spring-boot-containers`ではない。<br>
+本番環境とMySQLとAdminerを起動。<br>
